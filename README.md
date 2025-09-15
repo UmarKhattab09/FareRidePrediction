@@ -1,66 +1,49 @@
-# FareRidePrediction
+# 🚖 Uber & Lyft Fare Prediction
 
-🚖 Project Overview
+## 📌 Project Overview
+This project predicts ride fares for Uber and Lyft services using regression models.  
+It demonstrates **EDA, feature engineering, regression modeling, and model evaluation** on real-world ride data.  
 
-This project predicts ride fares for Uber and Lyft services using historical ride data. It demonstrates data preprocessing, feature engineering, and regression modeling (Linear Regression, Ridge, Lasso, Random Forest, XGBoost). The project also includes a Flask-based web interface for real-time fare predictions.
+---
 
-📊 Dataset
+## 📊 Dataset
+- Source: Kaggle – Uber/Lyft Ride Fare dataset  
+- Features include:
+  - `distance`: Trip distance (miles)  
+  - `surge_multiplier`: Surge pricing factor  
+  - `cab_type`: Uber/Lyft  
+  - `name`: Service type (UberX, UberXL, Lyft XL, etc.)  
+  - `price`: Target variable  
 
-Source: Kaggle “Uber and Lyft Ride Fare Prediction” dataset
+---
 
-Features include:
+## 🧹 Data Preprocessing
+- Missing value handling  
+- Encoding categorical variables:
+  - `cab_type` → Label Encoding  
+  - `name` → One-Hot Encoding  
+  - `surge_multiplier` → Ordinal Encoding  
+- Standardization of numeric features  
 
-distance: Trip distance in miles
+---
 
-surge_multiplier: Surge pricing factor
+## 📈 Models Implemented
+- **Linear Regression**  
+- **Ridge Regression**  
+- **Lasso Regression**  
+- **Random Forest Regressor**  
+- **XGBoost Regressor**  
 
-cab_type: UberX, UberXL, Lyft, etc.
+**Evaluation Metrics:** R², MSE, RMSE, MAE  
 
-name: Service type (Uber, Lyft, Black, Shared, etc.)
+### ✅ Sample Results
 
-price: Target variable
+| Model              | R²    | RMSE  | MAE  |
+|-------------------|-------|-------|------|
+| Linear Regression  | 0.928 | 2.51  | 1.78 |
+| Ridge Regression   | 0.928 | 2.51  | 1.78 |
+| Lasso Regression   | 0.913 | 2.76  | 1.90 |
+| Random Forest      | 0.966 | 1.73  | 1.13 |
+| XGBoost            | 0.965 | 1.75  | 1.16 |
 
-🧹 Data Preprocessing
-
-Handle missing values
-
-Encode categorical features:
-
-cab_type → Label Encoding
-
-name → One-Hot Encoding
-
-Encode ordinal features:
-
-surge_multiplier → OrdinalEncoder
-
-Standardize numeric features using StandardScaler
-
-🛠 Features
-
-Distance, surge multiplier, cab type, and service type
-
-Optional feature engineering: time of day, weekday/weekend
-
-📈 Models
-
-Linear Regression
-
-Ridge Regression
-
-Lasso Regression
-
-Random Forest Regressor
-
-XGBoost Regressor
-
-Evaluation Metrics: R², MSE, RMSE, MAE
-
-Sample Results:
-
-Model	R²	RMSE	MAE
-Linear Regression	0.928	2.51	1.78
-Ridge Regression	0.928	2.51	1.78
-Lasso Regression	0.913	2.76	1.90
-Random Forest	0.966	1.73	1.13
-XGBoost	0.965	1.75	1.16
+---
