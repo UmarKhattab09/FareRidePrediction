@@ -47,7 +47,8 @@ def predict():
     # --- Step 4: Predict ---
     prediction = model.predict(input_df)[0]
 
-    return f"Predicted Fare: ${prediction:.2f}"
+    return render_template("result.html", prediction=f"{prediction:.2f}")
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000)) 
