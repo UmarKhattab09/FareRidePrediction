@@ -6,8 +6,7 @@ It demonstrates **EDA, feature engineering, regression modeling, and model evalu
 
 Additionally, the model has been deployed using **Flask** and hosted on **Render**, allowing users to input ride details through a web interface and get real-time fare predictions.
 
-🌐 **Live Demo:** [Uber & Lyft Fare Predictor on Render](https://your-render-app-url.onrender.com)  
-*(replace with your actual Render URL)*  
+🌐 **Live Demo:** [Uber & Lyft Fare Predictor on Render](https://farerideprediction.onrender.com/)   
 
 ---
 
