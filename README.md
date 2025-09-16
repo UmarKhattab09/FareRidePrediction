@@ -4,6 +4,11 @@
 This project predicts ride fares for Uber and Lyft services using regression models.  
 It demonstrates **EDA, feature engineering, regression modeling, and model evaluation** on real-world ride data.  
 
+Additionally, the model has been deployed using **Flask** and hosted on **Render**, allowing users to input ride details through a web interface and get real-time fare predictions.
+
+🌐 **Live Demo:** [Uber & Lyft Fare Predictor on Render](https://your-render-app-url.onrender.com)  
+*(replace with your actual Render URL)*  
+
 ---
 
 ## 📊 Dataset
@@ -47,3 +52,25 @@ It demonstrates **EDA, feature engineering, regression modeling, and model evalu
 | XGBoost            | 0.965 | 1.75  | 1.16 |
 
 ---
+
+## 🌐 Deployment
+- Built a **Flask backend** for model inference  
+- Designed a simple **HTML + CSS frontend** for user input  
+- Deployed on **Render Cloud** for public access  
+
+---
+
+## ⚡ Tech Stack
+- **Python**: Pandas, NumPy, Scikit-learn, XGBoost  
+- **Visualization**: Matplotlib, Seaborn  
+- **Backend**: Flask  
+- **Deployment**: Render (cloud hosting)  
+- **Frontend**: HTML, CSS  
+
+---
+
+## 🚀 How to Run Locally
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/your-username/uber-lyft-fare-prediction.git
+   cd uber-lyft-fare-prediction
