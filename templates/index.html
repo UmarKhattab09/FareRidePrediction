@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Uber Fare Prediction</title>
+  <title>Cab Price Prediction</title>
 </head>
 <body>
-    <h1>Fare Prediction</h1>
-    <form action="/predict" method="post">
-        Distance: <input type="text" name="distance"><br>
-        Surge Multiplier: <input type="text" name="surge"><br>
-        Cab Type: <input type="text" name="cab_type"><br>
-        <button type="submit">Predict</button>
-    </form>
+  <h2>Cab Price Prediction</h2>
+  <form action="/predict" method="post">
+
+    <!-- Continuous Inputs -->
+    <label>Distance (miles):</label>
+    <input type="number" name="distance" step="0.1" required><br><br>
+
+    <label>Surge Multiplier:</label>
+    <input type="number" name="surge_multiplier" step="0.1" value="1.0" required><br><br>
+
+    <!-- Encoded Inputs -->
+    <label>Cab Type:</label>
+    <select name="cab_type_encoded">
+      <option value="0">Uber</option>
+      <option value="1">Lyft</option>
+    </select><br><br>
+
+    
+    <!-- <label>Surge Applied:</label>
+    <input type="number" name="surge_encoded" step="0.1" value="1.0" required><br><br> -->
+    <!-- <label>Surge Applied:</label>
+    <select name="surge_encoded">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select><br><br> -->
+
+    <!-- Ride Names -->
+    <label>Ride Type:</label>
+    <select name="ride_name">
+      <option value="name_UberX">UberX</option>
+      <option value="name_UberXL">UberXL</option>
+      <option value="name_UberPool">UberPool</option>
+      <option value="name_Lyft">Lyft</option>
+      <option value="name_Lyft XL">Lyft XL</option>
+      <option value="name_Shared">Shared</option>
+      <option value="name_Taxi">Taxi</option>
+      <option value="name_Black">Black</option>
+      <option value="name_Black SUV">Black SUV</option>
+      <option value="name_Lux">Lux</option>
+      <option value="name_Lux Black">Lux Black</option>
+      <option value="name_Lux Black XL">Lux Black XL</option>
+      <option value="name_WAV">WAV</option>
+    </select><br><br>
+
+    <input type="submit" value="Predict Price">
+  </form>
 </body>
 </html>
