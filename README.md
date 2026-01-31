@@ -1,5 +1,13 @@
 # 🚖 Uber & Lyft Fare Prediction
 
+# Project was updated on 1/31/2026.
+- Performed Detail Data Analysis to identify trends and patterns
+- Removed Outliers using boxplots
+- Provided Insights about the data
+- Fixed the dataset using the GOOGLE MAP API
+- Will Design a chunk of code that upon giving location will provide distance that can be used to provide location
+
+
 ## 📌 Project Overview
 This project predicts ride fares for Uber and Lyft services using regression models.  
 It demonstrates **EDA, feature engineering, regression modeling, and model evaluation** on real-world ride data.  
@@ -36,7 +44,8 @@ Additionally, the model has been deployed using **Flask** and hosted on **Render
 - **Ridge Regression**  
 - **Lasso Regression**  
 - **Random Forest Regressor**  
-- **XGBoost Regressor**  
+- **XGBoost Regressor**
+- ** Deep Neural Network ** 
 
 **Evaluation Metrics:** R², MSE, RMSE, MAE  
 
